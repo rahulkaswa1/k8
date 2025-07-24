@@ -1,0 +1,4 @@
+apiVersion: v2
+name: helmbusybox
+version: 0.1.0
+description: Deploys busybox pod with PVC using a storage class
