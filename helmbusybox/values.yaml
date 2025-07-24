@@ -1,0 +1,9 @@
+replicaCount: 1
+image:
+  repository: Alpine 
+  tag: latest
+  pullPolicy: IfNotPresent
+storage:
+  size: 1Gi
+  storageClassName: "azure-disk"
+mountPath: /mnt/azure

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: busybox-pv
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: azure-disk
+  azureDisk:
+    diskName: mydisk
+    diskURI: /subscriptions/39c3c362-561b-44a3-b6a7-c50cce9c8d1f/resourcegroups/sp-rg/providers/Microsoft.Compute/disks/k8disk
+    kind: Managed
